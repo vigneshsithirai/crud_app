@@ -11,6 +11,7 @@ require('./server/model/user');
 //Routes
 var indexRouter = require('./server/routes/index');
 var usersRouter = require('./server/routes/users');
+var fileRouter = require('./server/routes/filereadwrite');
 
 //Configs
 require('./server/config/connection');
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/file', fileRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
