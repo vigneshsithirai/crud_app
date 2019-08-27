@@ -17,6 +17,8 @@ Get git pull from master branch.
 
 Do `$ npm install`
 
+Run `node server.js`
+
 You application will run on `port: 3000`
 
 # Dependencies
